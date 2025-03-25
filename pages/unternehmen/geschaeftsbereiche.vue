@@ -47,32 +47,11 @@
           role="Leiterin Geschäftsentwicklung"
           imageUrl="/images/team/maria-schmidt.jpg"
         />
-        
-        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 mb-12">
-          <RelatedContentCard
-            companyName="NETINERA"
-            title="Organisation"
-            imageUrl="/images/organisation.jpg"
-          />
-          <RelatedContentCard
-            companyName="NETINERA"
-            title="EVU"
-            imageUrl="/images/evu.jpg"
-          />
-        </div>
 
-        <ContactSection />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import SubpageHeader from '~/components/SubpageHeader.vue';
-import BusinessModelPillars from '~/components/BusinessModelPillars.vue';
-import CompanyCard from '~/components/CompanyCard.vue';
-import SustainabilityArticle from '~/components/SustainabilityArticle.vue';
-import ProfileQuote from '~/components/ProfileQuote.vue';
-import RelatedContentCard from '~/components/RelatedContentCard.vue';
-import ContactSection from '~/components/ContactSection.vue';
 </script> 

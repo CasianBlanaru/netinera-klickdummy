@@ -29,43 +29,43 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
-import Logo from './Logo.vue';
-import NavigationLinks from './NavigationLinks.vue';
-import SearchIcon from './SearchIcon.vue';
-import SearchField from './SearchField.vue';
-import MobileNavigation from './MobileNavigation.vue';
+import { ref, onMounted, onUnmounted } from 'vue'
+import Logo from './Logo.vue'
+import NavigationLinks from './NavigationLinks.vue'
+import SearchIcon from './SearchIcon.vue'
+import SearchField from './SearchField.vue'
+import MobileNavigation from './MobileNavigation.vue'
 
-const isSearchOpen = ref(false);
-const isScrolledDown = ref(false);
-let lastScrollY = 0;
+const isSearchOpen = ref(false)
+const isScrolledDown = ref(false)
+let lastScrollY = 0
 
 const toggleSearch = () => {
-  isSearchOpen.value = !isSearchOpen.value;
-};
+  isSearchOpen.value = !isSearchOpen.value
+}
 
 const closeSearch = () => {
-  isSearchOpen.value = false;
-};
+  isSearchOpen.value = false
+}
 
 const handleScroll = () => {
-  const currentScrollY = window.scrollY;
+  const currentScrollY = window.scrollY
   
   // Show header when scrolling up, hide when scrolling down
   if (currentScrollY > lastScrollY) {
-    isScrolledDown.value = true;
+    isScrolledDown.value = true
   } else {
-    isScrolledDown.value = false;
+    isScrolledDown.value = false
   }
   
-  lastScrollY = currentScrollY;
-};
+  lastScrollY = currentScrollY
+}
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-});
+  window.addEventListener('scroll', handleScroll)
+})
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
+  window.removeEventListener('scroll', handleScroll)
+})
 </script> 

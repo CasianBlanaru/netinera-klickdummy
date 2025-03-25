@@ -3,22 +3,21 @@
     <!-- Skip to main content link für Barrierefreiheit -->
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     
-    <header>
-      <Header />
-    </header>
+    <Header />
     
     <main id="main-content" class="bg-white min-h-screen">
       <slot />
     </main>
     
-    <ClientOnly>
-      <FooterSection />
-    </ClientOnly>
+    <Footer />
+    <StickyButton />
   </div>
 </template>
 
 <script setup lang="ts">
-import Header from '../components/navigation/Header.vue';
+import Header from '../components/navigation/Header.vue'
+import Footer from '../components/navigation/Footer.vue'
+import StickyButton from '../components/StickyButton.vue'
 </script>
 
 <style scoped>

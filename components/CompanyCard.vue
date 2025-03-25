@@ -36,7 +36,6 @@ const props = defineProps<{
   companyName: string
   title: string
   description: string
-  imageUrl?: string
 }>()
 
 const id = `company-${uniqueId++}`

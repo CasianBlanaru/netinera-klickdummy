@@ -22,7 +22,9 @@ export default {
     },
   },
   plugins: [],
-  experimental: {
-    optimizeUniversalDefaults: true
+  future: {
+    hoverOnlyWhenSupported: true,
+    respectDefaultRingColorOpacity: true,
+    disableColorOpacityUtilitiesByDefault: true,
   }
 } 

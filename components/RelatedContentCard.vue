@@ -28,7 +28,6 @@
 interface Props {
   companyName: string;
   title: string;
-  imageUrl?: string;
   index?: number;
 }
 

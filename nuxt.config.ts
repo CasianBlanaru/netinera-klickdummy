@@ -5,11 +5,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@nuxt/fonts',
-    '@nuxt/icon',
-    '@nuxt/image',
+    '@vueuse/nuxt',
+    '@nuxtjs/color-mode',
     '@vueuse/motion/nuxt'
   ],
+  colorMode: {
+    classSuffix: '',
+    preference: 'system',
+    fallback: 'light'
+  },
   app: {
     head: {
       title: "Netinera",
@@ -47,30 +51,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-03-20',
 
   build: {
-    transpile: ['swiper/vue']
-  },
-
-  image: {
-    // The screen sizes predefined by `@nuxt/image`:
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-    },
-    // Options for the image optimization:
-    provider: 'ipx',
-    quality: 80,
-  },
-
-  motion: {
-    directives: {
-      'motion': {
-        initial: { opacity: 0, y: 100 },
-        enter: { opacity: 1, y: 0, transition: { duration: 800, ease: 'easeOut' } }
-      }
-    }
-  },
+    transpile: ['swiper/vue', '@vuepic/vue-datepicker']
+  }
 })

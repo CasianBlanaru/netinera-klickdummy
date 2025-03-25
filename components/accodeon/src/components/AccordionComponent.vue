@@ -53,7 +53,7 @@
           :class="{ 'bg-zinc-200': activeAccordion === index }"
           :aria-expanded="activeAccordion === index"
           :aria-controls="`accordion-content-${index}`"
-          id="accordion-header-${index}"
+          :id="`accordion-header-${index}`"
         >
           <span>NETINERA KONZERNLEITBILD</span>
           <span
@@ -78,10 +78,13 @@
         </button>
         <div
           v-show="activeAccordion === index"
-          id="accordion-content-${index}"
+          :id="`accordion-content-${index}`"
           role="region"
-          aria-labelledby="accordion-header-${index}"
+          :aria-labelledby="`accordion-header-${index}`"
           class="bg-white mb-4 p-5 border border-zinc-200 rounded-b"
+          v-motion
+          :initial="{ opacity: 0, height: 0 }"
+          :enter="{ opacity: 1, height: 'auto', transition: { duration: 300, ease: 'easeOut' } }"
         >
           <p class="mb-3 max-sm:text-sm text-base leading-6">
             Das NETINERA Konzernleitbild beschreibt unsere gemeinsame Vision und
@@ -227,17 +230,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
-import { useMotion } from "@vueuse/motion";
+import { defineComponent, ref, onMounted } from "vue";
 
 export default defineComponent({
   name: "AccordionComponent",
   setup() {
     const activeAccordion = ref<number | null>(null);
-    const { apply, leave } = useMotion({
-      initial: { opacity: 0, y: 100 },
-      enter: { opacity: 1, y: 0, transition: { duration: 800, ease: 'easeOut' } }
-    });
 
     const toggleAccordion = (index: number) => {
       if (activeAccordion.value === index) {
@@ -254,12 +252,17 @@ export default defineComponent({
       }
     };
 
+    onMounted(() => {
+      // Trigger animations on mount
+      document.querySelectorAll('[v-motion]').forEach((el) => {
+        el.classList.add('motion-ready');
+      });
+    });
+
     return {
       activeAccordion,
       toggleAccordion,
       handleKeyDown,
-      apply,
-      leave,
     };
   },
 });
@@ -280,5 +283,9 @@ export default defineComponent({
   .transform {
     transition: none;
   }
+}
+
+.motion-ready {
+  will-change: transform, opacity;
 }
 </style>

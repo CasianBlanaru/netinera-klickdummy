@@ -5,7 +5,7 @@
       isScrolledDown ? '-translate-y-full' : 'translate-y-0'
     ]"
   >
-    <div class="z-30 relative flex items-center gap-8 bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] px-12 max-sm:px-4 max-md:px-6 py-6 max-sm:py-3 max-md:py-4 border-[0.5px] border-gray-100/30 rounded-[48px] max-sm:rounded-3xl w-full h-24 max-sm:h-16 max-md:h-20">
+    <div class="z-30 relative flex items-center gap-8 bg-white shadow-sm px-12 max-sm:px-4 max-md:px-6 py-6 max-sm:py-3 max-md:py-4 border-[0.5px] border-gray-100/30 rounded-[48px] max-sm:rounded-3xl w-full h-24 max-sm:h-16 max-md:h-20">
       <div class="w-[255px] max-md:w-[150px]">
         <Logo />
       </div>

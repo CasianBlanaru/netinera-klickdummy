@@ -102,13 +102,13 @@ const menuItems: MenuItem[] = [
   },
   {
     text: 'Karriere',
-    href: '/karriere/index'
+    href: '/karriere'
   },
   {
     text: 'Presse',
     children: [
       { text: 'Pressemitteilungen', href: '/presse/pressemitteilungen' },
-      { text: 'PM Detail', href: '/presse/pm-detail-1' }
+      { text: 'News Detail', href: '/presse/news-detail' }
     ]
   },
   {

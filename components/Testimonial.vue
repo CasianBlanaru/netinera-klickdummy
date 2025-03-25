@@ -11,21 +11,10 @@
     </blockquote>
 
     <div
-      v-if="!avatarUrl"
       class="bg-amber-500 mb-7 rounded-full w-[120px] max-sm:w-20 max-md:w-[100px] h-[120px] max-sm:h-20 max-md:h-[100px]"
       role="img"
       aria-label="Testimonial avatar placeholder"
     ></div>
-
-    <nuxt-img
-      v-else
-      :src="avatarUrl"
-      :alt="`${name}'s profile picture`"
-      class="bg-amber-500 mb-7 rounded-full w-[120px] max-sm:w-20 max-md:w-[100px] h-[120px] max-sm:h-20 max-md:h-[100px] object-cover"
-      loading="lazy"
-      format="webp"
-      quality="80"
-    />
 
     <footer
       class="font-medium text-stone-900 max-sm:text-sm text-base text-center leading-6 tracking-normal"
@@ -42,7 +31,6 @@ interface TestimonialProps {
   quote: string;
   name: string;
   role: string;
-  avatarUrl?: string;
 }
 
 // Set default props
@@ -50,7 +38,6 @@ withDefaults(defineProps<TestimonialProps>(), {
   quote:
     '"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "',
   name: "Vorname Name",
-  role: "Funktion",
-  avatarUrl: undefined,
+  role: "Funktion"
 });
 </script>

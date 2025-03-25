@@ -5,7 +5,6 @@
     <div class="space-y-16">
       <!-- Navigation Components -->
       <section>
-        <h2 class="mb-6 font-semibold text-2xl">Navigation</h2>
         <div class="gap-8 grid">
           <div v-for="component in navigationComponents" :key="component.name" class="p-6 rounded-lg">
             <h3 class="mb-2 font-medium text-xl">{{ component.name }}</h3>
@@ -76,6 +75,14 @@ import FooterSection from '~/components/FooterSection.vue';
 import SustainabilitySection from '~/components/SustainabilitySection.vue';
 import RelatedArticleCard from '~/components/RelatedArticleCard.vue';
 import OdegArticle from '~/components/OdegArticle.vue';
+import AccordionComponent from '~/components/accodeon/src/components/AccordionComponent.vue';
+import Loader from '~/components/Loader.vue';
+import StickyButton from '~/components/StickyButton.vue';
+import StatisticsSection from '~/components/StatisticsSection.vue';
+import PortraitSection from '~/components/PortraitSection.vue';
+import CurrentSection from '~/components/CurrentSection.vue';
+import ResponsibilitySection from '~/components/ResponsibilitySection.vue';
+import CompanySection from '~/components/CompanySection.vue';
 
 const navigationComponents = [
   {
@@ -135,6 +142,56 @@ const contentComponents = [
     name: 'OdegArticle',
     description: 'Artikel über ODEG',
     component: OdegArticle
+  },
+  {
+    name: 'NewsFeed',
+    description: 'Feed für Neuigkeiten',
+    component: NewsFeed
+  },
+  {
+    name: 'PressReleaseDetail',
+    description: 'Detailansicht einer Pressemitteilung',
+    component: PressReleaseDetail
+  },
+  {
+    name: 'PressReleasePage',
+    description: 'Pressemitteilungsseite',
+    component: PressReleasePage
+  },
+  {
+    name: 'SustainabilitySection',
+    description: 'Nachhaltigkeitsbereich',
+    component: SustainabilitySection
+  },
+  {
+    name: 'AccordionComponent',
+    description: 'Akkordeon-Komponente für ausklappbare Inhalte',
+    component: AccordionComponent
+  },
+  {
+    name: 'StatisticsSection',
+    description: 'Statistik-Bereich',
+    component: StatisticsSection
+  },
+  {
+    name: 'PortraitSection',
+    description: 'Portrait-Bereich',
+    component: PortraitSection
+  },
+  {
+    name: 'CurrentSection',
+    description: 'Aktuelles-Bereich',
+    component: CurrentSection
+  },
+  {
+    name: 'ResponsibilitySection',
+    description: 'Verantwortungs-Bereich',
+    component: ResponsibilitySection
+  },
+  {
+    name: 'CompanySection',
+    description: 'Unternehmens-Bereich',
+    component: CompanySection
   }
 ];
 
@@ -163,6 +220,36 @@ const layoutComponents = [
     name: 'ContactSection',
     description: 'Kontaktbereich mit Formular',
     component: ContactSection
+  },
+  {
+    name: 'RelatedArticleCard',
+    description: 'Karte für verwandte Artikel',
+    component: RelatedArticleCard
+  },
+  {
+    name: 'Testimonial',
+    description: 'Testimonial-Komponente',
+    component: Testimonial
+  },
+  {
+    name: 'CompanyCard',
+    description: 'Firmenkarte',
+    component: CompanyCard
+  },
+  {
+    name: 'MissionPage',
+    description: 'Missionsseite',
+    component: MissionPage
+  },
+  {
+    name: 'Loader',
+    description: 'Lade-Animation Komponente',
+    component: Loader
+  },
+  {
+    name: 'StickyButton',
+    description: 'Fixierter Button Komponente',
+    component: StickyButton
   }
 ];
 </script> 

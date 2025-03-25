@@ -4,7 +4,7 @@
       <NuxtLink 
         v-for="(item, index) in newsItems"
         :key="index"
-        :to="`/news-detail`"
+        :to="`/presse/news-detail`"
         class="hover:opacity-80 transition-opacity"
       >
         <NewsItem

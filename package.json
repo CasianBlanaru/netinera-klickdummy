@@ -12,8 +12,9 @@
   "dependencies": {
     "@nuxt/fonts": "0.11.0",
     "@nuxt/icon": "1.11.0",
-    "@nuxt/image": "1.10.0",
+    "@nuxtjs/color-mode": "^3.5.2",
     "@vueuse/motion": "^3.0.3",
+    "@vueuse/nuxt": "^13.0.0",
     "nuxt": "^3.16.1",
     "swiper": "^11.2.6",
     "vue": "^3.5.13",
@@ -26,6 +27,6 @@
     "@tailwindcss/vite": "^4.0.14",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.14"
+    "tailwindcss": "^4.0.16"
   }
 }

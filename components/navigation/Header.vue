@@ -17,6 +17,9 @@
           <div class="max-md:hidden flex justify-center items-center hover:bg-gray-100 rounded-full w-10 h-10 transition-colors">
             <SearchIcon :is-open="isSearchOpen" @click="toggleSearch" />
           </div>
+          <div class="max-md:hidden">
+            <ThemeSwitcher />
+          </div>
           <div class="hidden max-md:block">
             <MobileNavigation />
           </div>
@@ -35,6 +38,7 @@ import NavigationLinks from './NavigationLinks.vue'
 import SearchIcon from './SearchIcon.vue'
 import SearchField from './SearchField.vue'
 import MobileNavigation from './MobileNavigation.vue'
+import ThemeSwitcher from '../ThemeSwitcher.vue'
 
 const isSearchOpen = ref(false)
 const isScrolledDown = ref(false)

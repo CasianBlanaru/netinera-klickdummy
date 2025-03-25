@@ -240,16 +240,6 @@ const layoutComponents = [
     name: 'MissionPage',
     description: 'Missionsseite',
     component: MissionPage
-  },
-  {
-    name: 'Loader',
-    description: 'Lade-Animation Komponente',
-    component: Loader
-  },
-  {
-    name: 'StickyButton',
-    description: 'Fixierter Button Komponente',
-    component: StickyButton
   }
 ];
 </script> 

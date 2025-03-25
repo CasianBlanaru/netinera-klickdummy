@@ -5,6 +5,7 @@
   --color-primary-red: #dd052b;
   --color-primary-dark: #3e3842;
   --color-neutral: #ffffff;
+  --font-family: 'Inter', sans-serif;
 }
 
 /* Dark Theme */
@@ -13,13 +14,15 @@
   --color-primary-light: #00685e;
   --color-primary-red: #dd052b;
   --color-primary-dark: #ffffff;
-  --color-neutral: #3e3842;
+  --color-neutral: #fff;
+  --font-family: 'titillium', sans-serif;
 }
 
 /* Anwendung der Variablen auf Basis-Elemente */
 body {
-  background-color: var(--color-neutral);
-  color: var(--color-primary-dark);
+  background-color: #fff;
+  color: var(--color-primary);
+  font-family: var(--font-family);
 }
 
 /* Übergänge für Theme-Wechsel */
@@ -28,6 +31,11 @@ body {
 }
 
 /* Utility-Klassen für Theme-spezifische Styles */
+
+.bg-orange-400, .bg-amber-500 {
+    background-color: var(--color-primary);
+    color: #fff;
+}
 .theme-primary {
   color: var(--color-primary);
 }

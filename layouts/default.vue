@@ -3,9 +3,7 @@
     <ClientOnly>
       <div :class="[$colorMode.value]">
         <div class="bg-theme-neutral min-h-screen text-theme-primary-dark">
-          <header class="top-0 right-0 z-50 fixed p-4">
-            <ThemeSwitcher />
-          </header>
+
           <!-- Skip to main content link für Barrierefreiheit -->
           <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
           

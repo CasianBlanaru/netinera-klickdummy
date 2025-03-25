@@ -11,15 +11,15 @@
       <section class="mb-16">
         <h2 class="mb-8 font-bold text-2xl">Navigation</h2>
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Header</h3>
             <Header />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Footer</h3>
             <Footer />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Sticky Button</h3>
             <StickyButton />
           </div>
@@ -30,15 +30,20 @@
       <section class="mb-16">
         <h2 class="mb-8 font-bold text-2xl">Content</h2>
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Subpage Header</h3>
             <SubpageHeader title="Beispiel" subtitle="Ein Untertitel" titleId="example" />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Hero Header</h3>
-            <HeroHeader />
+            <HeroHeader 
+              title="Beispiel Titel"
+              subtitle="Beispiel Untertitel"
+              titleId="example"
+              subtext="Beispiel Text"
+            />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Image Slider</h3>
             <ImageSlider />
           </div>
@@ -49,15 +54,15 @@
       <section class="mb-16">
         <h2 class="mb-8 font-bold text-2xl">Artikel</h2>
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Sustainability Article</h3>
             <SustainabilityArticle />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Odeg Article</h3>
             <OdegArticle />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Press Release Detail</h3>
             <PressReleaseDetail />
           </div>
@@ -68,7 +73,7 @@
       <section class="mb-16">
         <h2 class="mb-8 font-bold text-2xl">Karten</h2>
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Contact Card</h3>
             <ContactCard 
               name="Max Mustermann"
@@ -77,11 +82,15 @@
               email="max.mustermann@example.com"
             />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Company Card</h3>
-            <CompanyCard />
+            <CompanyCard 
+              companyName="Netinera"
+              title="Unser Unternehmen"
+              description="Beispiel Beschreibung"
+            />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Related Article Card</h3>
             <RelatedArticleCard />
           </div>
@@ -92,15 +101,19 @@
       <section class="mb-16">
         <h2 class="mb-8 font-bold text-2xl">Testimonials</h2>
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Testimonial</h3>
-            <Testimonial />
+            <Testimonial 
+              quote="Beispiel Zitat"
+              name="Max Mustermann"
+              role="CEO"
+            />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Profile Quote</h3>
             <ProfileQuote />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Testimonial Example</h3>
             <TestimonialExample />
           </div>
@@ -111,11 +124,11 @@
       <section class="mb-16">
         <h2 class="mb-8 font-bold text-2xl">News</h2>
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">News Feed</h3>
             <NewsFeed />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">News Item</h3>
             <NewsItem 
               date="25. März 2024"
@@ -123,7 +136,7 @@
               headline="Beispiel-News-Artikel"
             />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Press Release Page</h3>
             <PressReleasePage />
           </div>
@@ -134,13 +147,85 @@
       <section class="mb-16">
         <h2 class="mb-8 font-bold text-2xl">Kontakt</h2>
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Contact Section</h3>
             <ContactSection />
           </div>
-          <div class="bg-white shadow p-6 rounded-lg">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Filter Section</h3>
             <FilterSection />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Components -->
+      <section class="mb-16">
+        <h2 class="mb-8 font-bold text-2xl">Sektionen</h2>
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
+            <h3 class="mb-4 font-semibold">Portrait Section</h3>
+            <PortraitSection />
+          </div>
+          <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
+            <h3 class="mb-4 font-semibold">Statistics Section</h3>
+            <StatisticsSection />
+          </div>
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Current Section</h3>
+            <CurrentSection />
+          </div>
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Responsibility Section</h3>
+            <ResponsibilitySection />
+          </div>
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Footer Section</h3>
+            <FooterSection />
+          </div>
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Sustainability Section</h3>
+            <SustainabilitySection />
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Components -->
+      <section class="mb-16">
+        <h2 class="mb-8 font-bold text-2xl">Business</h2>
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Business Model Pillars</h3>
+            <BusinessModelPillars 
+              reverse={false}
+              title="Beispiel Titel"
+              content="Beispiel Inhalt"
+            />
+          </div>
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Mission Page</h3>
+            <MissionPage />
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile Components -->
+      <section class="mb-16">
+        <h2 class="mb-8 font-bold text-2xl">Profile</h2>
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Fabrizio Favara Profile</h3>
+            <FabrizioFavaraProfile />
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion Components -->
+      <section class="mb-16">
+        <h2 class="mb-8 font-bold text-2xl">Accordion</h2>
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="mb-4 font-semibold">Accordion Component</h3>
+            <AccordionComponent />
           </div>
         </div>
       </section>
@@ -169,4 +254,14 @@ import NewsItem from '~/components/NewsItem.vue'
 import PressReleasePage from '~/components/PressReleasePage.vue'
 import ContactSection from '~/components/ContactSection.vue'
 import FilterSection from '~/components/FilterSection.vue'
+import PortraitSection from '~/components/PortraitSection.vue'
+import StatisticsSection from '~/components/StatisticsSection.vue'
+import CurrentSection from '~/components/CurrentSection.vue'
+import ResponsibilitySection from '~/components/ResponsibilitySection.vue'
+import FooterSection from '~/components/FooterSection.vue'
+import SustainabilitySection from '~/components/SustainabilitySection.vue'
+import BusinessModelPillars from '~/components/BusinessModelPillars.vue'
+import MissionPage from '~/components/MissionPage.vue'
+import FabrizioFavaraProfile from '~/components/FabrizioFavaraProfile.vue'
+import AccordionComponent from '~/components/accodeon/src/components/AccordionComponent.vue'
 </script> 

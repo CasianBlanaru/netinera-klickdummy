@@ -1,5 +1,5 @@
 <template>
-  <article class="odeg-article">
+  <article class="overflow-hidden odeg-article">
     <!-- Hero Section -->
     <header
       class="relative flex flex-row justify-between items-start gap-5 mt-5 px-5 py-5 max-w-[375px] min-h-[372px] max-sm:min-h-[133px] shrink-0"

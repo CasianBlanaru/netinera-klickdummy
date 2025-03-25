@@ -102,7 +102,7 @@ const menuItems: MenuItem[] = [
   },
   {
     text: 'Karriere',
-    href: '/karriere'
+    href: '/karriere/index'
   },
   {
     text: 'Presse',

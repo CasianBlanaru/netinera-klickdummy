@@ -21,9 +21,9 @@
     </NuxtLink>
     
     <!-- Popover -->
-    <div class="invisible group-hover:visible right-16 bottom-24 z-50 fixed bg-white opacity-0 group-hover:opacity-100 shadow-lg p-3 border-[0.5px] border-gray-100/30 rounded-lg w-48 transition-all translate-y-2 group-hover:translate-y-0 duration-300 transform">
+    <div class="invisible group-hover:visible right-24 bottom-8 z-50 fixed bg-white opacity-0 group-hover:opacity-100 shadow-lg p-3 border-[0.5px] border-gray-100/30 rounded-lg w-48 transition-all translate-x-2 group-hover:translate-x-0 duration-300 transform">
       <p class="text-gray-700 text-sm">Alle Komponenten anzeigen</p>
-      <div class="bottom-0 left-1/2 absolute bg-white border-[0.5px] border-gray-100/30 w-3 h-3 rotate-45 -translate-x-1/2 translate-y-1/2"></div>
+      <div class="top-1/2 right-0 absolute bg-white border-[0.5px] border-gray-100/30 w-3 h-3 rotate-45 -translate-y-1/2 translate-x-1/2"></div>
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@
       <Header />
     </header>
     
-    <main id="main-content" class="bg-white pt-16 min-h-screen">
+    <main id="main-content" class="bg-white min-h-screen">
       <slot />
     </main>
     

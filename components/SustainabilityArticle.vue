@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white mb-18 min-h-screen">
+  <div class="bg-white min-h-screen">
     <HeroHeader
       title="Nachhaltig in die Zukunft"
       subtitle="ÖPNV & NACHHALTIGKEIT"

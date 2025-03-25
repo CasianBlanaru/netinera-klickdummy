@@ -12,7 +12,38 @@
           Innovation treibt uns voran. Mit modernster Technik und zukunftsweisenden 
           Lösungen gestalten wir die Mobilität von morgen.
         </p>
-        <!-- Weitere Inhalte hier -->
+        
+        <ImageSlider class="mb-12" />
+        
+        <SustainabilityArticle
+          title="Innovative Technologien"
+          content="Wir investieren kontinuierlich in modernste Technologien und digitale Lösungen. Von der Elektrifizierung unserer Flotte bis hin zu intelligenten Verkehrssystemen - wir gestalten die Zukunft der Mobilität."
+          :reverse="false"
+        />
+        
+        <BusinessModelPillars class="my-12" />
+        
+        <Testimonial
+          quote="Innovation ist der Schlüssel zu nachhaltiger und effizienter Mobilität."
+          name="Thomas Schmidt"
+          role="Leiter Technologie & Innovation"
+          avatarUrl="/images/team/thomas-schmidt.jpg"
+        />
+        
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 mb-12">
+          <RelatedContentCard
+            companyName="NETINERA"
+            title="ÖPNV & Nachhaltigkeit"
+            imageUrl="/images/oepnv-nachhaltigkeit.jpg"
+          />
+          <RelatedContentCard
+            companyName="NETINERA"
+            title="Instandhaltung & Service"
+            imageUrl="/images/instandhaltung-service.jpg"
+          />
+        </div>
+
+        <ContactSection />
       </div>
     </div>
   </div>
@@ -20,4 +51,10 @@
 
 <script setup lang="ts">
 import SubpageHeader from '~/components/SubpageHeader.vue';
+import ImageSlider from '~/components/ImageSlider.vue';
+import SustainabilityArticle from '~/components/SustainabilityArticle.vue';
+import BusinessModelPillars from '~/components/BusinessModelPillars.vue';
+import Testimonial from '~/components/Testimonial.vue';
+import RelatedContentCard from '~/components/RelatedContentCard.vue';
+import ContactSection from '~/components/ContactSection.vue';
 </script> 

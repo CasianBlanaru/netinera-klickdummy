@@ -25,7 +25,11 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Netinera - Ihr Partner für nachhaltige Mobilität' }
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { 
+          rel: "stylesheet", 
+          href: "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;500;600;700&display=swap"
+        }
       ]
     },
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -36,6 +40,7 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css',
     '~/assets/css/themes.css',
+    '~/assets/css/fonts.css',
     'swiper/css',
     'swiper/css/navigation'
   ],

@@ -70,7 +70,12 @@
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div class="bg-white shadow p-6 rounded-lg">
             <h3 class="mb-4 font-semibold">Contact Card</h3>
-            <ContactCard />
+            <ContactCard 
+              name="Max Mustermann"
+              position="Geschäftsführer"
+              phone="+49 123 456789"
+              email="max.mustermann@example.com"
+            />
           </div>
           <div class="bg-white shadow p-6 rounded-lg">
             <h3 class="mb-4 font-semibold">Company Card</h3>

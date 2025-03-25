@@ -1,0 +1,89 @@
+/* Tailwind-ähnliche Hilfsklassen für Tailwind 4 */
+
+/* Flexbox */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-1 { flex: 1; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.gap-5 { gap: 1.25rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-10 { gap: 2.5rem; }
+.gap-24 { gap: 6rem; }
+
+/* Margin und Padding */
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-12 { padding: 3rem; }
+.px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+.pt-20 { padding-top: 5rem; }
+.pb-20 { padding-bottom: 5rem; }
+.m-auto { margin: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-10 { margin-top: 2.5rem; margin-bottom: 2.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-10 { margin-bottom: 2.5rem; }
+.mb-11 { margin-bottom: 2.75rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mt-10 { margin-top: 2.5rem; }
+.mt-20 { margin-top: 5rem; }
+
+/* Größe */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.min-w-\[223px\] { min-width: 223px; }
+.min-w-\[300px\] { min-width: 300px; }
+.max-w-\[578px\] { max-width: 578px; }
+.max-w-\[610px\] { max-width: 610px; }
+.max-w-\[660px\] { max-width: 660px; }
+.max-w-\[760px\] { max-width: 760px; }
+.max-w-\[1012px\] { max-width: 1012px; }
+.max-w-\[1121px\] { max-width: 1121px; }
+.max-w-\[1200px\] { max-width: 1200px; }
+.max-w-\[1344px\] { max-width: 1344px; }
+
+/* Text */
+.text-center { text-align: center; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+.text-base { font-size: 1rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.leading-\[150\%\] { line-height: 150%; }
+.tracking-\[-0.176px\] { letter-spacing: -0.176px; }
+.tracking-\[-0.22px\] { letter-spacing: -0.22px; }
+.tracking-\[-0.456px\] { letter-spacing: -0.456px; }
+.tracking-\[-0.57px\] { letter-spacing: -0.57px; }
+.tracking-\[-0.88px\] { letter-spacing: -0.88px; }
+
+/* Farben */
+.bg-white { background-color: white; }
+.text-white { color: white; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .sm\:text-2xl { font-size: 1.5rem; }
+  .sm\:p-6 { padding: 1.5rem; }
+  .sm\:gap-10 { gap: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+  .md\:text-3xl { font-size: 1.875rem; }
+  .md\:p-8 { padding: 2rem; }
+  .md\:flex-wrap { flex-wrap: wrap; }
+}
+
+/* Abrundung */
+.rounded { border-radius: 0.25rem; }
+.rounded-full { border-radius: 9999px; } 

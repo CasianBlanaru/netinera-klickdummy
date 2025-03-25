@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Globale Stile */
+:root {
+  --color-primary: #1E1E1E;
+  --color-orange: #FF5722;
+  --color-secondary: #F5F5F5;
+  --color-gray: #E6E6E6;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:focus, button:focus {
+  outline: 2px solid #007aff;
+  outline-offset: 2px;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-orange {
+  background-color: var(--color-orange);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-orange {
+  color: var(--color-orange);
+}
+
+.container {
+  width: 100%;
+  max-width: 1344px;
+  margin-left: auto;
+  margin-right: auto;
+}

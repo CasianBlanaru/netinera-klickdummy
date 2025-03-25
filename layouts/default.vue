@@ -57,4 +57,9 @@ const colorMode = useColorMode();
   z-index: 9999;
   clip: auto;
 }
+
+/* Ensure dark mode font is applied */
+.dark {
+  font-family: 'Titillium Web', sans-serif !important;
+}
 </style> 

@@ -12,8 +12,17 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'titillium': ['Titillium Web', 'sans-serif'],
-        'roboto': ['Roboto', 'sans-serif'],
+        sans: [
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'sans-serif'
+        ],
+        titillium: ['Titillium Web', 'sans-serif'],
       },
       colors: {
         // Light theme colors (default)

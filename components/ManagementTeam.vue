@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto md:p-5 px-[15px] max-w-[1200px] font-titillium">
+  <div class="mx-auto md:p-5 px-[15px] max-w-[1200px]">
     <!-- Management Profile Card -->
     <div v-for="(profile, index) in managementProfiles" :key="index" class="mb-10 md:mb-20">
       <!-- Profile Content -->
@@ -17,7 +17,7 @@
 
       <!-- Quote Section -->
       <div class="mt-8 md:mt-[60px] text-center">
-        <p class="mx-auto mb-6 md:mb-[30px] max-w-[1012px] font-titillium text-[#1E1E1E] md:text-[30px] dark:text-white text-xl italic leading-[150%] tracking-[-0.57px]">
+        <p class="mx-auto mb-6 md:mb-[30px] max-w-[1012px] text-[#1E1E1E] md:text-[30px] dark:text-white text-xl italic leading-[150%] tracking-[-0.57px]">
           "{{ profile.quote }}"
         </p>
         
@@ -72,12 +72,4 @@ const managementProfiles: ManagementProfile[] = [
     quote: 'Ich bin stolz, schon so lange bei einem der größten privaten Verkehrsunternehmen in Deutschland zu arbeiten.'
   }
 ];
-</script>
-
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;600;700&display=swap');
-
-.font-titillium {
-  font-family: 'Titillium Web', sans-serif;
-}
-</style> 
+</script> 

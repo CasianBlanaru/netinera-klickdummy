@@ -17,16 +17,14 @@
           <div class="max-md:hidden flex justify-center items-center hover:bg-gray-100 rounded-full w-10 h-10 transition-colors">
             <SearchIcon :is-open="isSearchOpen" @click="toggleSearch" />
           </div>
-          <HamburgerButton
-            :is-open="isMobileMenuOpen"
-            @click="toggleMobileMenu"
-          />
+          <div class="hidden max-md:block">
+            <MobileNavigation />
+          </div>
         </div>
       </nav>
     </div>
 
     <SearchField :is-open="isSearchOpen" @close="closeSearch" />
-    <MobileMenu :is-open="isMobileMenuOpen" @close="closeMobileMenu" />
   </header>
 </template>
 
@@ -36,21 +34,11 @@ import Logo from './Logo.vue';
 import NavigationLinks from './NavigationLinks.vue';
 import SearchIcon from './SearchIcon.vue';
 import SearchField from './SearchField.vue';
-import HamburgerButton from './HamburgerButton.vue';
-import MobileMenu from './MobileMenu.vue';
+import MobileNavigation from './MobileNavigation.vue';
 
-const isMobileMenuOpen = ref(false);
 const isSearchOpen = ref(false);
 const isScrolledDown = ref(false);
 let lastScrollY = 0;
-
-const toggleMobileMenu = () => {
-  isMobileMenuOpen.value = !isMobileMenuOpen.value;
-};
-
-const closeMobileMenu = () => {
-  isMobileMenuOpen.value = false;
-};
 
 const toggleSearch = () => {
   isSearchOpen.value = !isSearchOpen.value;

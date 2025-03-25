@@ -66,7 +66,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-interface MenuItem {
+export interface MenuItem {
   text: string;
   href?: string;
   children?: {

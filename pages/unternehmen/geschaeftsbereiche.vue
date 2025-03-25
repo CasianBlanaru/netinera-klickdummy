@@ -14,8 +14,6 @@
           bieten wir maßgeschneiderte Lösungen.
         </p>
         
-        <BusinessModelPillars class="mb-12" />
-        
         <div class="gap-8 grid grid-cols-1 md:grid-cols-3 my-12">
           <CompanyCard
             companyName="Personenverkehr"

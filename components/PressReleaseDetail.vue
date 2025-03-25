@@ -1,7 +1,7 @@
 <template>
-  <article class="flex flex-col items-center bg-white mx-auto mb-30 p-10 max-md:p-5 pt-40 max-w-[1437px]">
+  <article class="flex flex-col items-center bg-white mx-auto mb-30 p-10 max-md:px-[15px] max-md:py-5 pt-40 max-w-[1437px]">
     <!-- Header Section -->
-    <div class="mb-20 max-w-[592px]">
+    <div class="mb-20 max-md:mb-10 w-full max-w-[592px]">
       <p class="mb-3 font-['Inter'] text-stone-900 text-base">
         {{ date }} | {{ company }}
       </p>
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="max-w-[592px]">
+    <div class="w-full max-w-[592px]">
       <!-- Text Content -->
       <div class="mb-10 font-['Inter'] text-stone-900 text-base leading-[150%]">
         <slot name="content"></slot>
@@ -19,9 +19,7 @@
 
       <!-- Image Section -->
       <div class="my-10">
-        <div class="bg-orange-400 mb-3.5" 
-        style="width: 576px; height: 374px; max-width: 100%;">
-        </div>
+        <div class="bg-orange-400 mb-3.5 w-full max-w-[576px] aspect-[576/374]"></div>
         <p v-if="imageCaption" class="font-['Inter'] text-stone-900 text-base">
           {{ imageCaption }}
         </p>
@@ -44,7 +42,7 @@
         </h2>
         <div class="flex max-md:flex-col gap-[90px] max-md:gap-10">
           <div v-for="contact in contacts" :key="contact.name" class="flex flex-col">
-            <div class="bg-orange-400 mb-[38px] w-[223px] max-md:w-full h-[232px]"></div>
+            <div class="bg-orange-400 mb-[38px] w-full max-w-[223px] aspect-[223/232]"></div>
             <div class="font-['Inter']">
               <p class="mb-1.5 font-bold text-base">{{ contact.name }}</p>
               <p class="text-base leading-[150%]">{{ contact.position }}</p>

@@ -16,6 +16,11 @@
   --color-primary-dark: #ffffff;
   --color-neutral: #fff;
   --font-family: 'titillium', sans-serif;
+
+  .bg-orange-400, .bg-amber-500 {
+    background-color: var(--color-primary);
+    color: #fff;
+}
 }
 
 /* Anwendung der Variablen auf Basis-Elemente */
@@ -32,10 +37,6 @@ body {
 
 /* Utility-Klassen für Theme-spezifische Styles */
 
-.bg-orange-400, .bg-amber-500 {
-    background-color: var(--color-primary);
-    color: #fff;
-}
 .theme-primary {
   color: var(--color-primary);
 }

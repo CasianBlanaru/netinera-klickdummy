@@ -1,43 +1,43 @@
 <template>
-  <section class="px-4 py-16">
-    <div class="mx-auto max-w-4xl container">
-      <h2 class="mb-12 font-bold text-[40px] text-center tracking-tight">Netinera in Zahlen</h2>
-      <p class="mx-auto mb-16 max-w-2xl text-gray-800 text-lg text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis.
-      </p>
+  <section class="px-4 py-8 md:py-16">
+    <div class="mx-auto max-w-7xl container">
+      <h2 class="mb-4 md:mb-6 font-bold md:text-[40px] text-2xl text-center">Netinera in Zahlen</h2>
       
+      <p class="mx-auto mb-8 md:mb-12 max-w-2xl text-base md:text-lg text-center">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+        Aenean commodo ligula eget dolor. Aenean massa.
+      </p>
+
       <!-- Statistics Grid -->
-      <div class="gap-5 grid grid-cols-1 md:grid-cols-3">
+      <div class="gap-4 md:gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         <!-- First Row -->
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
 
         <!-- Second Row -->
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
-      </div>
 
-      <!-- Last Row (2 columns) -->
-      <div class="gap-5 grid grid-cols-1 md:grid-cols-2 mx-auto mt-5 max-w-[648px]">
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <!-- Last Row (2 columns) -->
+        <div class="flex justify-center items-center sm:col-span-1 bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
-        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
-          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        <div class="flex justify-center items-center sm:col-span-1 bg-[#E5E5E5] rounded-lg h-[120px] md:h-[169px]">
+          <span class="font-bold text-[#333333] md:text-[64px] text-4xl">439</span>
         </div>
       </div>
     </div>
@@ -45,8 +45,7 @@
 </template>
 
 <script setup lang="ts">
-// Die Komponente verwendet derzeit statische Daten
-// Sie können später ein Interface für die Statistiken hinzufügen, wenn die tatsächlichen Zahlen bekannt sind
+// Keine Props oder Logik benötigt
 </script>
 
 <style scoped>

@@ -1,37 +1,39 @@
 <template>
-  <div class="mx-auto p-5 max-w-[1200px]">
+  <div class="mx-auto md:p-5 px-[15px] max-w-[1200px]">
     <!-- Management Profile Card -->
-    <div v-for="(profile, index) in managementProfiles" :key="index" class="mb-20">
+    <div v-for="(profile, index) in managementProfiles" :key="index" class="mb-10 md:mb-20">
       <!-- Profile Content -->
-      <div class="mx-auto px-5 sm:px-4 md:px-5 max-w-[580px]">
-        <h2 class="mb-4 font-inter font-bold text-[#1E1E1E] sm:text-xl text-2xl">
+      <div class="mx-auto max-w-[580px]">
+        <h2 class="mb-4 font-inter font-bold text-[#1E1E1E] text-xl md:text-2xl leading-tight">
           {{ profile.name }}
         </h2>
-        <div class="mb-4 font-inter font-normal text-[#1E1E1E] sm:text-sm text-base leading-[150%] tracking-[-0.176px]">
+        <div class="mb-4 font-inter font-normal text-[#1E1E1E] text-base md:text-lg leading-[150%] tracking-[-0.176px]">
           {{ profile.description }}
         </div>
-        <div v-if="profile.personal" class="mb-4 font-inter font-normal text-[#1E1E1E] sm:text-sm text-base leading-[150%] tracking-[-0.176px]">
+        <div v-if="profile.personal" class="mb-4 font-inter font-normal text-[#1E1E1E] text-base md:text-lg leading-[150%] tracking-[-0.176px]">
           {{ profile.personal }}
         </div>
       </div>
 
       <!-- Quote Section -->
-      <div class="mt-[60px] text-center">
-        <p class="mx-auto mb-[30px] px-5 sm:px-4 md:px-5 max-w-[1012px] font-merriweather text-[#1E1E1E] text-[30px] sm:text-[22px] md:text-[26px] leading-[150%] tracking-[-0.57px]">
+      <div class="mt-8 md:mt-[60px] text-center">
+        <p class="mx-auto mb-6 md:mb-[30px] max-w-[1012px] font-merriweather text-[#1E1E1E] md:text-[30px] text-xl leading-[150%] tracking-[-0.57px]">
           "{{ profile.quote }}"
         </p>
         
         <!-- Profile Image Placeholder -->
-        <div class="bg-[#FF9B50] mx-auto mb-[30px] rounded-full w-[120px] sm:w-[100px] h-[120px] sm:h-[100px]">
+        <div class="bg-[#FF9B50] mx-auto mb-4 md:mb-[30px] rounded-full w-24 md:w-[120px] h-24 md:h-[120px]">
           <!-- Image can be added here -->
         </div>
 
         <!-- Profile Footer -->
-        <div class="font-inter text-[#1E1E1E] text-base leading-[150%] tracking-[-0.176px]">
-          {{ profile.name }}
-        </div>
-        <div class="font-inter text-[#1E1E1E] text-base leading-[150%] tracking-[-0.176px]">
-          {{ profile.position }}
+        <div class="space-y-1">
+          <div class="font-inter font-medium text-[#1E1E1E] text-base md:text-lg leading-[150%] tracking-[-0.176px]">
+            {{ profile.name }}
+          </div>
+          <div class="font-inter text-[#1E1E1E] text-sm md:text-base leading-[150%] tracking-[-0.176px]">
+            {{ profile.position }}
+          </div>
         </div>
       </div>
     </div>

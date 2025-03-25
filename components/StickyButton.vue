@@ -1,6 +1,6 @@
 <template>
   <router-link
-    to="/leistungen"
+    to="/components"
     class="right-8 bottom-8 z-50 fixed bg-red-600 hover:bg-red-700 shadow-lg hover:shadow-xl p-4 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-white hover:scale-105 transition-all duration-300"
   >
     <svg

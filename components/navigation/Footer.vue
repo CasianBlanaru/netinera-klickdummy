@@ -18,8 +18,8 @@
           <h3 class="mb-4 font-bold">Leistungen</h3>
           <ul class="space-y-2">
             <li><router-link to="/leistungen" class="text-gray-400 hover:text-white">Übersicht</router-link></li>
-            <li><router-link to="/leistungen/opnv" class="text-gray-400 hover:text-white">ÖPNV</router-link></li>
-            <li><router-link to="/leistungen/technik" class="text-gray-400 hover:text-white">Technik</router-link></li>
+            <li><router-link to="/leistungen/oepnv-nachhaltigkeit" class="text-gray-400 hover:text-white">ÖPNV</router-link></li>
+            <li><router-link to="/leistungen/technik-innovation" class="text-gray-400 hover:text-white">Technik</router-link></li>
           </ul>
         </div>
         <div>

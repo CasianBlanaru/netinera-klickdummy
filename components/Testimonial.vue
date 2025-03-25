@@ -17,11 +17,14 @@
       aria-label="Testimonial avatar placeholder"
     ></div>
 
-    <img
+    <nuxt-img
       v-else
       :src="avatarUrl"
       :alt="`${name}'s profile picture`"
       class="bg-amber-500 mb-7 rounded-full w-[120px] max-sm:w-20 max-md:w-[100px] h-[120px] max-sm:h-20 max-md:h-[100px] object-cover"
+      loading="lazy"
+      format="webp"
+      quality="80"
     />
 
     <footer

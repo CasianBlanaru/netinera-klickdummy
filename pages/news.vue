@@ -106,7 +106,7 @@ const allNewsItems = [
     description: 'Wir stellen unsere neue Nachhaltigkeitsstrategie vor, mit dem Ziel bis 2030 klimaneutral zu werden.',
     date: '18. März 2023',
     category: 'Nachhaltigkeit',
-    link: '/nachhaltigkeit'
+    link: '/verantwortung'
   },
   {
     title: 'Digitale Fahrplanauskunft optimiert',

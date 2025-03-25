@@ -7,7 +7,7 @@
       <section>
         <h2 class="mb-6 font-semibold text-2xl">Navigation</h2>
         <div class="gap-8 grid">
-          <div v-for="component in navigationComponents" :key="component.name" class="p-6 border rounded-lg">
+          <div v-for="component in navigationComponents" :key="component.name" class="p-6 rounded-lg">
             <h3 class="mb-2 font-medium text-xl">{{ component.name }}</h3>
             <p class="mb-4 text-gray-600">{{ component.description }}</p>
             <div class="bg-gray-50 p-4 rounded">
@@ -22,7 +22,7 @@
       <section>
         <h2 class="mb-6 font-semibold text-2xl">Content</h2>
         <div class="gap-8 grid">
-          <div v-for="component in contentComponents" :key="component.name" class="p-6 border rounded-lg">
+          <div v-for="component in contentComponents" :key="component.name" class="p-6 rounded-lg">
             <h3 class="mb-2 font-medium text-xl">{{ component.name }}</h3>
             <p class="mb-4 text-gray-600">{{ component.description }}</p>
             <div class="bg-gray-50 p-4 rounded">
@@ -37,7 +37,7 @@
       <section>
         <h2 class="mb-6 font-semibold text-2xl">Layout</h2>
         <div class="gap-8 grid">
-          <div v-for="component in layoutComponents" :key="component.name" class="p-6 border rounded-lg">
+          <div v-for="component in layoutComponents" :key="component.name" class="p-6 rounded-lg">
             <h3 class="mb-2 font-medium text-xl">{{ component.name }}</h3>
             <p class="mb-4 text-gray-600">{{ component.description }}</p>
             <div class="bg-gray-50 p-4 rounded">

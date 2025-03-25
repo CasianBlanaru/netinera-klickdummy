@@ -1,39 +1,64 @@
 <template>
   <div
-    class="p-5 mx-auto my-0 max-w-[596px] text-stone-900 max-md:p-4 max-md:max-w-[991px] max-sm:p-2.5 max-sm:max-w-screen-sm"
+    v-motion
+    :initial="{ opacity: 0, y: 100 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 800, ease: 'easeOut' } }"
+    class="mx-auto my-0 p-5 max-sm:p-2.5 max-md:p-4 max-w-[596px] max-sm:max-w-screen-sm max-md:max-w-[991px] text-stone-900"
   >
-    <div class="mb-5 text-base leading-6 max-sm:text-sm">
+    <div 
+      v-motion
+      :initial="{ opacity: 0, y: 20 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200, ease: 'easeOut' } }"
+      class="mb-5 max-sm:text-sm text-base leading-6"
+    >
       Der NETINERA-Konzern ist eines der größten privaten Verkehrsunternehmen in
       Deutschland und ein starker Wettbewerber im ÖPNV-Markt. Dabei ist die
       Wahrnehmung des Konzerns maßgeblich durch die regionalen
       Tochtergesellschaften und Marken geprägt.
     </div>
-    <div class="mb-5 text-base leading-6 max-sm:text-sm">
+    <div 
+      v-motion
+      :initial="{ opacity: 0, y: 20 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 400, ease: 'easeOut' } }"
+      class="mb-5 max-sm:text-sm text-base leading-6"
+    >
       Um am Markt weiterhin erfolgreich zu sein und Wachstum zu ermöglichen, hat
       der Konzern eine gemeinsame Identifikationsgrundlage, das Konzernleitbild,
       erarbeitet. Dabei stehen wirtschaftlich erfolgreiches Handeln und ein
       positives Arbeitsklima im Mittelpunkt.
     </div>
-    <div class="mb-5 text-base leading-6 max-sm:text-sm">
+    <div 
+      v-motion
+      :initial="{ opacity: 0, y: 20 }"
+      :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600, ease: 'easeOut' } }"
+      class="mb-5 max-sm:text-sm text-base leading-6"
+    >
       Die Broschüre finden Sie hier als PDF zum Download:
     </div>
 
     <!-- Accordion Items -->
     <div class="accordion">
-      <div class="accordion-item">
+      <div 
+        v-for="(item, index) in 3" 
+        :key="index"
+        class="accordion-item"
+        v-motion
+        :initial="{ opacity: 0, x: -100 }"
+        :enter="{ opacity: 1, x: 0, transition: { duration: 500, delay: 800 + (index * 200), ease: 'easeOut' } }"
+      >
         <button
-          @click="toggleAccordion(0)"
-          @keydown="handleKeyDown($event, 0)"
-          class="p-5 w-full mx-0 my-2.5 mb-4 cursor-pointer bg-zinc-100 duration-[0.3s] transition-[background-color] max-sm:p-4 text-left flex justify-between items-center"
-          :class="{ 'bg-zinc-200': activeAccordion === 0 }"
-          :aria-expanded="activeAccordion === 0"
-          :aria-controls="`accordion-content-0`"
-          id="accordion-header-0"
+          @click="toggleAccordion(index)"
+          @keydown="handleKeyDown($event, index)"
+          class="flex justify-between items-center bg-zinc-100 mx-0 my-2.5 mb-4 p-5 max-sm:p-4 w-full text-left transition-[background-color] duration-[0.3s] cursor-pointer"
+          :class="{ 'bg-zinc-200': activeAccordion === index }"
+          :aria-expanded="activeAccordion === index"
+          :aria-controls="`accordion-content-${index}`"
+          id="accordion-header-${index}"
         >
           <span>NETINERA KONZERNLEITBILD</span>
           <span
-            class="transform transition-transform duration-300"
-            :class="{ 'rotate-180': activeAccordion === 0 }"
+            class="transition-transform duration-300 transform"
+            :class="{ 'rotate-180': activeAccordion === index }"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,18 +77,18 @@
           </span>
         </button>
         <div
-          v-show="activeAccordion === 0"
-          id="accordion-content-0"
+          v-show="activeAccordion === index"
+          id="accordion-content-${index}"
           role="region"
-          aria-labelledby="accordion-header-0"
-          class="p-5 bg-white mb-4 border border-zinc-200 rounded-b"
+          aria-labelledby="accordion-header-${index}"
+          class="bg-white mb-4 p-5 border border-zinc-200 rounded-b"
         >
-          <p class="mb-3 text-base leading-6 max-sm:text-sm">
+          <p class="mb-3 max-sm:text-sm text-base leading-6">
             Das NETINERA Konzernleitbild beschreibt unsere gemeinsame Vision und
             Mission. Es definiert unsere Werte und Grundsätze, die unser
             tägliches Handeln leiten.
           </p>
-          <p class="text-base leading-6 max-sm:text-sm">
+          <p class="max-sm:text-sm text-base leading-6">
             Laden Sie die vollständige Broschüre herunter, um mehr über unsere
             Unternehmensphilosophie zu erfahren.
           </p>
@@ -72,11 +97,11 @@
 
       <div>
         <div
-          class="mx-0 mt-10 mb-5 text-2xl font-bold tracking-tight leading-9 max-md:text-2xl max-sm:text-xl"
+          class="mx-0 mt-10 mb-5 font-bold max-sm:text-xl text-2xl max-md:text-2xl leading-9 tracking-tight"
         >
           Compliance
         </div>
-        <div class="mb-5 text-base leading-6 max-sm:text-sm">
+        <div class="mb-5 max-sm:text-sm text-base leading-6">
           Compliance bedeutet die Einhaltung von Gesetzen, unternehmensinternen
           Richtlinien und ethischen Prinzipien. NETINERA hat ein umfassendes
           Compliance-System verankert, das sich auf die drei Säulen der
@@ -85,7 +110,7 @@
           Unternehmensgeschäfts durch alle Beteiligten, insbesondere durch das
           Management, die Mitarbeiter und die Geschäftspartner.
         </div>
-        <div class="mb-5 text-base leading-6 max-sm:text-sm">
+        <div class="mb-5 max-sm:text-sm text-base leading-6">
           Um dies sicherzustellen und mögliche Verstöße aufzudecken, hat
           NETINERA ein Beschwerdeverfahren eingerichtet. Hierdurch können
           Beschwerden und Hinweise zu möglichen Compliance-Verstößen übermittelt
@@ -101,7 +126,7 @@
         <button
           @click="toggleAccordion(1)"
           @keydown="handleKeyDown($event, 1)"
-          class="p-5 w-full mx-0 my-2.5 mb-4 cursor-pointer bg-zinc-100 duration-[0.3s] transition-[background-color] max-sm:p-4 text-left flex justify-between items-center"
+          class="flex justify-between items-center bg-zinc-100 mx-0 my-2.5 mb-4 p-5 max-sm:p-4 w-full text-left transition-[background-color] duration-[0.3s] cursor-pointer"
           :class="{ 'bg-zinc-200': activeAccordion === 1 }"
           :aria-expanded="activeAccordion === 1"
           :aria-controls="`accordion-content-1`"
@@ -109,7 +134,7 @@
         >
           <span>NETINERA ETHIKKODEX</span>
           <span
-            class="transform transition-transform duration-300"
+            class="transition-transform duration-300 transform"
             :class="{ 'rotate-180': activeAccordion === 1 }"
           >
             <svg
@@ -133,14 +158,14 @@
           id="accordion-content-1"
           role="region"
           aria-labelledby="accordion-header-1"
-          class="p-5 bg-white mb-4 border border-zinc-200 rounded-b"
+          class="bg-white mb-4 p-5 border border-zinc-200 rounded-b"
         >
-          <p class="mb-3 text-base leading-6 max-sm:text-sm">
+          <p class="mb-3 max-sm:text-sm text-base leading-6">
             Der NETINERA Ethikkodex definiert die ethischen Standards und
             Verhaltensregeln, die für alle Mitarbeiter und Geschäftspartner
             gelten.
           </p>
-          <p class="text-base leading-6 max-sm:text-sm">
+          <p class="max-sm:text-sm text-base leading-6">
             Er umfasst Themen wie Integrität, Respekt, Fairness und
             Verantwortung in allen Geschäftsbeziehungen.
           </p>
@@ -151,7 +176,7 @@
         <button
           @click="toggleAccordion(2)"
           @keydown="handleKeyDown($event, 2)"
-          class="p-5 w-full mx-0 my-2.5 mb-4 cursor-pointer bg-zinc-100 duration-[0.3s] transition-[background-color] max-sm:p-4 text-left flex justify-between items-center"
+          class="flex justify-between items-center bg-zinc-100 mx-0 my-2.5 mb-4 p-5 max-sm:p-4 w-full text-left transition-[background-color] duration-[0.3s] cursor-pointer"
           :class="{ 'bg-zinc-200': activeAccordion === 2 }"
           :aria-expanded="activeAccordion === 2"
           :aria-controls="`accordion-content-2`"
@@ -159,7 +184,7 @@
         >
           <span>NETINERA Grundsatzerklärung zur Menschenrechtsstrategie</span>
           <span
-            class="transform transition-transform duration-300"
+            class="transition-transform duration-300 transform"
             :class="{ 'rotate-180': activeAccordion === 2 }"
           >
             <svg
@@ -183,14 +208,14 @@
           id="accordion-content-2"
           role="region"
           aria-labelledby="accordion-header-2"
-          class="p-5 bg-white mb-4 border border-zinc-200 rounded-b"
+          class="bg-white mb-4 p-5 border border-zinc-200 rounded-b"
         >
-          <p class="mb-3 text-base leading-6 max-sm:text-sm">
+          <p class="mb-3 max-sm:text-sm text-base leading-6">
             Die NETINERA Grundsatzerklärung zur Menschenrechtsstrategie
             beschreibt unser Engagement für die Einhaltung und Förderung der
             Menschenrechte in allen Geschäftsbereichen.
           </p>
-          <p class="text-base leading-6 max-sm:text-sm">
+          <p class="max-sm:text-sm text-base leading-6">
             Sie umfasst unsere Verpflichtungen im Rahmen des
             Lieferkettensorgfaltspflichtengesetzes und unsere Maßnahmen zum
             Schutz der Menschenrechte in unserer gesamten Wertschöpfungskette.
@@ -203,11 +228,16 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import { useMotion } from "@vueuse/motion";
 
 export default defineComponent({
   name: "AccordionComponent",
   setup() {
     const activeAccordion = ref<number | null>(null);
+    const { apply, leave } = useMotion({
+      initial: { opacity: 0, y: 100 },
+      enter: { opacity: 1, y: 0, transition: { duration: 800, ease: 'easeOut' } }
+    });
 
     const toggleAccordion = (index: number) => {
       if (activeAccordion.value === index) {
@@ -218,7 +248,6 @@ export default defineComponent({
     };
 
     const handleKeyDown = (event: KeyboardEvent, index: number) => {
-      // Handle keyboard navigation for accessibility
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
         toggleAccordion(index);
@@ -229,6 +258,8 @@ export default defineComponent({
       activeAccordion,
       toggleAccordion,
       handleKeyDown,
+      apply,
+      leave,
     };
   },
 });

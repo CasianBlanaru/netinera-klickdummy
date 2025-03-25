@@ -15,7 +15,7 @@
           <h4 class="mb-4 font-bold">Quick Links</h4>
           <ul class="space-y-2">
             <li><NuxtLink to="/" class="text-gray-400 hover:text-white">Home</NuxtLink></li>
-            <li><NuxtLink to="/nachhaltigkeit" class="text-gray-400 hover:text-white">Nachhaltigkeit</NuxtLink></li>
+            <li><NuxtLink to="/verantwortung" class="text-gray-400 hover:text-white">Nachhaltigkeit</NuxtLink></li>
             <li><NuxtLink to="/kontakt" class="text-gray-400 hover:text-white">Kontakt</NuxtLink></li>
           </ul>
         </div>

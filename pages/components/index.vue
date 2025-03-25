@@ -4,6 +4,7 @@
       title="Komponenten"
       subtitle="Übersicht aller verfügbaren Komponenten"
       titleId="components"
+      subtext="Hier finden Sie eine Übersicht aller verfügbaren Komponenten"
     />
 
     <div class="mx-auto px-4 sm:px-6 lg:px-8 container">
@@ -32,7 +33,12 @@
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Subpage Header</h3>
-            <SubpageHeader title="Beispiel" subtitle="Ein Untertitel" titleId="example" />
+            <SubpageHeader 
+              title="Beispiel" 
+              subtitle="Ein Untertitel" 
+              titleId="example"
+              subtext="Ein Beispieltext für den Subpage Header"
+            />
           </div>
           <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
             <h3 class="mb-4 font-semibold">Hero Header</h3>
@@ -40,7 +46,7 @@
               title="Beispiel Titel"
               subtitle="Beispiel Untertitel"
               titleId="example"
-              subtext="Beispiel Text"
+              subtext="Ein ausführlicher Beispieltext für den Hero Header"
             />
           </div>
           <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
@@ -91,8 +97,11 @@
             />
           </div>
           <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
-            <h3 class="mb-4 font-semibold">Related Article Card</h3>
-            <RelatedArticleCard />
+            <h3 class="mb-4 font-semibold">Related Content Card</h3>
+            <RelatedContentCard 
+              companyName="Netinera"
+              title="Verwandter Artikel"
+            />
           </div>
         </div>
       </section>
@@ -134,6 +143,7 @@
               date="25. März 2024"
               company="Netinera"
               headline="Beispiel-News-Artikel"
+              description="Ein Beispieltext für den News-Artikel"
             />
           </div>
           <div class="bg-white shadow p-6 border border-[#E5E7EB] rounded-lg">
@@ -184,7 +194,11 @@
           </div>
           <div class="bg-white shadow p-6 rounded-lg">
             <h3 class="mb-4 font-semibold">Sustainability Section</h3>
-            <SustainabilitySection />
+            <SustainabilitySection 
+              :reverse="false"
+              title="Nachhaltigkeit"
+              content="Beispielinhalt für die Nachhaltigkeitssektion"
+            />
           </div>
         </div>
       </section>
@@ -245,7 +259,7 @@ import OdegArticle from '~/components/OdegArticle.vue'
 import PressReleaseDetail from '~/components/PressReleaseDetail.vue'
 import ContactCard from '~/components/ContactCard.vue'
 import CompanyCard from '~/components/CompanyCard.vue'
-import RelatedArticleCard from '~/components/RelatedArticleCard.vue'
+import RelatedContentCard from '~/components/RelatedContentCard.vue'
 import Testimonial from '~/components/Testimonial.vue'
 import ProfileQuote from '~/components/ProfileQuote.vue'
 import TestimonialExample from '~/components/TestimonialExample.vue'

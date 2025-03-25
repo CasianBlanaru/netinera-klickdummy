@@ -1,29 +1,54 @@
 <template>
-  <div class="bg-white w-full min-h-screen">
-    <div class="flex flex-col items-center px-6 sm:px-3 md:px-4 py-[37px]">
-      <h2 class="font-inter font-bold text-[#1E1E1E] text-[40px] sm:text-[28px] md:text-[32px] text-center leading-[150%] tracking-[-0.88px]">
-        Netinera in Zahlen
-      </h2>
-      
-      <p class="mt-[46px] md:mt-8 w-full max-w-[760px] font-inter font-medium text-[#1E1E1E] text-[20px] md:text-[18px] sm:text-base text-center leading-[150%] tracking-[-0.22px]">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+  <section class="px-4 py-16">
+    <div class="mx-auto max-w-4xl container">
+      <h2 class="mb-12 font-bold text-[40px] text-center tracking-tight">Netinera in Zahlen</h2>
+      <p class="mx-auto mb-16 max-w-2xl text-gray-800 text-lg text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis.
       </p>
       
-      <div class="gap-5 md:gap-4 grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 mt-16 md:mt-12">
-        <div v-for="i in 6" :key="i" class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px] font-bold text-[#333333] text-[64px]">
-          439
+      <!-- Statistics Grid -->
+      <div class="gap-5 grid grid-cols-1 md:grid-cols-3">
+        <!-- First Row -->
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        </div>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        </div>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        </div>
+
+        <!-- Second Row -->
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        </div>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        </div>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
         </div>
       </div>
-      
-      <div class="gap-5 md:gap-4 grid grid-cols-2 md:grid-cols-1 mx-auto mt-5 max-w-[648px]">
-        <div v-for="i in 2" :key="i" class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px] font-bold text-[#333333] text-[64px]">
-          439
+
+      <!-- Last Row (2 columns) -->
+      <div class="gap-5 grid grid-cols-1 md:grid-cols-2 mx-auto mt-5 max-w-[648px]">
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
+        </div>
+        <div class="flex justify-center items-center bg-[#E5E5E5] rounded h-[169px]">
+          <span class="font-bold text-[#333333] text-[64px]">439</span>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
-// Keine Props oder Logik benötigt
-</script> 
+// Die Komponente verwendet derzeit statische Daten
+// Sie können später ein Interface für die Statistiken hinzufügen, wenn die tatsächlichen Zahlen bekannt sind
+</script>
+
+<style scoped>
+/* Die Stile sind jetzt direkt in den Tailwind-Klassen integriert */
+</style> 

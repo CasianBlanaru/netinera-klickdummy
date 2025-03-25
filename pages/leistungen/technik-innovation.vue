@@ -27,19 +27,16 @@
           quote="Innovation ist der Schlüssel zu nachhaltiger und effizienter Mobilität."
           name="Thomas Schmidt"
           role="Leiter Technologie & Innovation"
-          avatarUrl="/images/team/thomas-schmidt.jpg"
         />
         
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 mb-12">
           <RelatedContentCard
             companyName="NETINERA"
             title="ÖPNV & Nachhaltigkeit"
-            imageUrl="/images/oepnv-nachhaltigkeit.jpg"
           />
           <RelatedContentCard
             companyName="NETINERA"
             title="Instandhaltung & Service"
-            imageUrl="/images/instandhaltung-service.jpg"
           />
         </div>
 

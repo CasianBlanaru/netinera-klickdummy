@@ -20,19 +20,16 @@
             companyName="ODEG"
             title="Ostdeutsche Eisenbahn"
             description="Regionaler Schienenverkehr in Ostdeutschland"
-            imageUrl="/images/companies/odeg.jpg"
           />
           <CompanyCard
             companyName="metronom"
             title="Metronom Eisenbahn"
             description="Personennahverkehr in Niedersachsen"
-            imageUrl="/images/companies/metronom.jpg"
           />
           <CompanyCard
             companyName="vlexx"
             title="vlexx GmbH"
             description="SPNV in Rheinland-Pfalz und Hessen"
-            imageUrl="/images/companies/vlexx.jpg"
           />
         </div>
         
@@ -48,19 +45,16 @@
           quote="Wir verbinden Menschen und Regionen - zuverlässig und nachhaltig."
           name="Michael Meyer"
           role="Geschäftsführer EVU"
-          imageUrl="/images/team/michael-meyer.jpg"
         />
         
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 mb-12">
           <RelatedContentCard
             companyName="NETINERA"
             title="Organisation"
-            imageUrl="/images/organisation.jpg"
           />
           <RelatedContentCard
             companyName="NETINERA"
             title="Geschäftsbereiche"
-            imageUrl="/images/geschaeftsbereiche.jpg"
           />
         </div>
 

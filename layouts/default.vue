@@ -1,16 +1,25 @@
 <template>
   <div>
-    <!-- Skip to main content link für Barrierefreiheit -->
-    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
-    
-    <Header />
-    
-    <main id="main-content" class="bg-white min-h-screen">
-      <slot />
-    </main>
-    
-    <Footer />
-    <StickyButton />
+    <ClientOnly>
+      <div :class="[$colorMode.value]">
+        <div class="bg-theme-neutral min-h-screen text-theme-primary-dark">
+          <header class="top-0 right-0 z-50 fixed p-4">
+            <ThemeSwitcher />
+          </header>
+          <!-- Skip to main content link für Barrierefreiheit -->
+          <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+          
+          <Header />
+          
+          <main id="main-content" class="min-h-screen">
+            <slot />
+          </main>
+          
+          <Footer />
+          <StickyButton />
+        </div>
+      </div>
+    </ClientOnly>
   </div>
 </template>
 
@@ -18,21 +27,37 @@
 import Header from '../components/navigation/Header.vue'
 import Footer from '../components/navigation/Footer.vue'
 import StickyButton from '../components/StickyButton.vue'
+import ThemeSwitcher from '~/components/ThemeSwitcher.vue'
+
+// Stelle sicher, dass der initiale Farbmodus korrekt gesetzt ist
+const colorMode = useColorMode();
 </script>
 
-<style scoped>
+<style>
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 0;
-  background: #FF5722;
-  color: #1E1E1E;
-  padding: 8px;
-  z-index: 100;
-  transition: top 0.3s;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .skip-link:focus {
+  position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  margin: 1rem;
+  background: white;
+  color: black;
+  z-index: 9999;
+  clip: auto;
 }
 </style> 

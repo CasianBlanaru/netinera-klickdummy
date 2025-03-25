@@ -18,19 +18,9 @@
       </div>
 
       <!-- Image Section -->
-      <div v-if="imageUrl || imagePlaceholder" class="my-10">
-        <div :class="[
-          'mb-3.5',
-          imagePlaceholder ? 'bg-orange-400' : ''
-        ]" 
-        :style="{ 
-          width: '576px',
-          height: '374px',
-          maxWidth: '100%',
-          backgroundImage: imageUrl ? 'url(' + imageUrl + ')' : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }">
+      <div class="my-10">
+        <div class="bg-orange-400 mb-3.5" 
+        style="width: 576px; height: 374px; max-width: 100%;">
         </div>
         <p v-if="imageCaption" class="font-['Inter'] text-stone-900 text-base">
           {{ imageCaption }}
@@ -54,9 +44,7 @@
         </h2>
         <div class="flex max-md:flex-col gap-[90px] max-md:gap-10">
           <div v-for="contact in contacts" :key="contact.name" class="flex flex-col">
-            <div class="bg-orange-400 mb-[38px] w-[223px] max-md:w-full h-[232px]">
-              <img v-if="contact.imageUrl" :src="contact.imageUrl" :alt="contact.name" class="w-full h-full object-cover" />
-            </div>
+            <div class="bg-orange-400 mb-[38px] w-[223px] max-md:w-full h-[232px]"></div>
             <div class="font-['Inter']">
               <p class="mb-1.5 font-bold text-base">{{ contact.name }}</p>
               <p class="text-base leading-[150%]">{{ contact.position }}</p>
@@ -78,15 +66,12 @@ interface Contact {
   position: string;
   phone: string;
   email: string;
-  imageUrl?: string;
 }
 
 interface Props {
   date?: string;
   company?: string;
   title?: string;
-  imageUrl?: string;
-  imagePlaceholder?: boolean;
   imageCaption?: string;
   aboutTitle?: string;
   aboutContent?: string;
@@ -97,7 +82,6 @@ withDefaults(defineProps<Props>(), {
   date: '',
   company: '',
   title: '',
-  imagePlaceholder: false,
   contacts: () => []
 });
 </script> 

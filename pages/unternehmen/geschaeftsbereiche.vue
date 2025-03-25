@@ -19,19 +19,16 @@
             companyName="Personenverkehr"
             title="SPNV & ÖPNV"
             description="Regionaler Schienenverkehr und öffentlicher Nahverkehr"
-            imageUrl="/images/companies/personenverkehr.jpg"
           />
           <CompanyCard
             companyName="Service"
             title="Instandhaltung"
             description="Wartung und Service für Schienenfahrzeuge"
-            imageUrl="/images/companies/service.jpg"
           />
           <CompanyCard
             companyName="Innovation"
             title="Digitalisierung"
             description="Entwicklung digitaler Mobilitätslösungen"
-            imageUrl="/images/companies/innovation.jpg"
           />
         </div>
         
@@ -45,7 +42,6 @@
           quote="Die Vernetzung unserer Geschäftsbereiche schafft einzigartige Synergien für unsere Kunden."
           name="Maria Schmidt"
           role="Leiterin Geschäftsentwicklung"
-          imageUrl="/images/team/maria-schmidt.jpg"
         />
 
       </div>

@@ -45,7 +45,6 @@ interface ManagementProfile {
   description: string;
   personal?: string;
   quote: string;
-  imageUrl?: string;
 }
 
 const managementProfiles: ManagementProfile[] = [

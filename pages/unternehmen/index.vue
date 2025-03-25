@@ -11,14 +11,12 @@
           <SustainabilityArticle 
             title="Nachhaltigkeit"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            imageUrl="/images/sustainability.jpg"
           />
           
           <!-- Odeg Article -->
           <OdegArticle 
             title="ODEG"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            imageUrl="/images/odeg.jpg"
           />
           
           <!-- Press Release Detail -->
@@ -48,14 +46,12 @@
             companyName="Netinera"
             title="Unser Unternehmen"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            imageUrl="/images/company.jpg"
           />
           
           <!-- Related Article Card -->
           <RelatedArticleCard 
             title="Verwandter Artikel"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            imageUrl="/images/article.jpg"
           />
         </div>
       </div>
@@ -70,7 +66,6 @@
             quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             name="John Doe"
             role="CEO"
-            avatarUrl="/images/avatar.jpg"
           />
           
           <!-- Profile Quote -->
@@ -78,7 +73,6 @@
             quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             name="Jane Smith"
             role="CTO"
-            avatarUrl="/images/profile.jpg"
           />
           
           <!-- Testimonial Example -->
@@ -86,7 +80,6 @@
             quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             name="Mike Johnson"
             role="COO"
-            avatarUrl="/images/example.jpg"
           />
         </div>
       </div>

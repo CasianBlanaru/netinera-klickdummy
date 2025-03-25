@@ -30,19 +30,16 @@
           quote="Mit unseren nachhaltigen Mobilitätslösungen tragen wir aktiv zum Klimaschutz bei."
           name="Dr. Marcel Winter"
           role="Leiter Nachhaltigkeit"
-          avatarUrl="/images/team/marcel-winter.jpg"
         />
         
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 mb-12">
           <RelatedContentCard
             companyName="NETINERA"
             title="Technik & Innovation"
-            imageUrl="/images/technik-innovation.jpg"
           />
           <RelatedContentCard
             companyName="NETINERA"
             title="Instandhaltung & Service"
-            imageUrl="/images/instandhaltung-service.jpg"
           />
         </div>
 

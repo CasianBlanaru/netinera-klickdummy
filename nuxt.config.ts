@@ -12,7 +12,9 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
     preference: 'system',
-    fallback: 'light'
+    fallback: 'light',
+    dataValue: 'theme',
+    storageKey: 'netinera-color-mode'
   },
   app: {
     head: {
@@ -33,6 +35,7 @@ export default defineNuxtConfig({
   // Load CSS files
   css: [
     '~/assets/css/main.css',
+    '~/assets/css/themes.css',
     'swiper/css',
     'swiper/css/navigation'
   ],

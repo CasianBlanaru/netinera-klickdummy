@@ -1,0 +1,69 @@
+/* Light Theme (default) */
+:root {
+  --color-primary: #00685e;
+  --color-primary-light: #1a776e;
+  --color-primary-red: #dd052b;
+  --color-primary-dark: #3e3842;
+  --color-neutral: #ffffff;
+}
+
+/* Dark Theme */
+.dark {
+  --color-primary: #1a776e;
+  --color-primary-light: #00685e;
+  --color-primary-red: #dd052b;
+  --color-primary-dark: #ffffff;
+  --color-neutral: #3e3842;
+}
+
+/* Anwendung der Variablen auf Basis-Elemente */
+body {
+  background-color: var(--color-neutral);
+  color: var(--color-primary-dark);
+}
+
+/* Übergänge für Theme-Wechsel */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Utility-Klassen für Theme-spezifische Styles */
+.theme-primary {
+  color: var(--color-primary);
+}
+
+.theme-primary-light {
+  color: var(--color-primary-light);
+}
+
+.theme-primary-red {
+  color: var(--color-primary-red);
+}
+
+.theme-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.theme-neutral {
+  color: var(--color-neutral);
+}
+
+.bg-theme-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-theme-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.bg-theme-primary-red {
+  background-color: var(--color-primary-red);
+}
+
+.bg-theme-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.bg-theme-neutral {
+  background-color: var(--color-neutral);
+} 

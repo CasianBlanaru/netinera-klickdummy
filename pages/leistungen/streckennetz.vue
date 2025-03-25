@@ -21,12 +21,10 @@
           <RelatedContentCard
             companyName="NETINERA"
             title="Technik & Innovation"
-            imageUrl="/images/technik-innovation.jpg"
           />
           <RelatedContentCard
             companyName="NETINERA"
             title="ÖPNV & Nachhaltigkeit"
-            imageUrl="/images/oepnv-nachhaltigkeit.jpg"
           />
         </div>
 

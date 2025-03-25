@@ -32,19 +32,16 @@
           quote="Regelmäßige Wartung und professioneller Service sind der Schlüssel zu zuverlässigem Schienenverkehr."
           name="Andreas Weber"
           role="Leiter Instandhaltung"
-          avatarUrl="/images/team/andreas-weber.jpg"
         />
         
         <div class="gap-8 grid grid-cols-1 md:grid-cols-2 mb-12">
           <RelatedContentCard
             companyName="NETINERA"
             title="Technik & Innovation"
-            imageUrl="/images/technik-innovation.jpg"
           />
           <RelatedContentCard
             companyName="NETINERA"
             title="ÖPNV & Nachhaltigkeit"
-            imageUrl="/images/oepnv-nachhaltigkeit.jpg"
           />
         </div>
 

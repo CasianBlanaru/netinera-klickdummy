@@ -1,29 +1,29 @@
 <template>
   <article
-    class="flex-1 self-stretch p-4 pb-28 -mb-0.5 h-auto bg-neutral-100 max-h-[200px] min-h-[200px] min-w-[300px]"
+    class="flex-1 self-stretch bg-neutral-100 -mb-0.5 p-4 pb-28 min-w-[300px] h-auto min-h-[200px] max-h-[200px]"
   >
-    <div class="flex gap-5 max-md:flex-col">
-      <div class="w-[33%] max-md:ml-0 max-md:w-full">
+    <div class="flex max-md:flex-col gap-5">
+      <div class="max-md:ml-0 w-[33%] max-md:w-full">
         <div
-          class="mb-4 w-36 bg-orange-400 h-[145px]"
+          class="bg-orange-400 mb-4 w-36 h-[145px]"
           role="img"
           aria-label="Artikelbild"
         ></div>
       </div>
-      <div class="ml-5 w-[73%] max-md:ml-0 max-md:w-full">
-        <p class="mb-2 text-base font-medium text-stone-900">ODEG</p>
-        <h3 class="mb-2 text-2xl font-bold text-stone-900">
+      <div class="ml-5 max-md:ml-0 w-[73%] max-md:w-full">
+        <p class="mb-2 font-medium text-stone-900 text-base">ODEG</p>
+        <h3 class="mb-2 font-bold text-stone-900 text-2xl">
           Im Osten unverzichtbar
         </h3>
         <a
           href="#"
-          class="text-lg text-stone-900 hover:underline focus:outline-none focus:ring-2 focus:ring-stone-900"
+          class="focus:outline-none focus:ring-2 focus:ring-stone-900 text-stone-900 text-lg hover:underline"
           >→ Mehr</a
         >
       </div>
-      <div class="ml-5 w-[33%] max-md:ml-0 max-md:w-full hidden">
+      <div class="hidden ml-5 max-md:ml-0 w-[33%] max-md:w-full">
         <div
-          class="absolute top-5 self-stretch bg-orange-400 h-[352px] left-[696px] w-[647px]"
+          class="top-5 left-[696px] absolute flex justify-center items-center self-stretch bg-orange-400 w-[647px] h-[352px]"
           role="img"
           aria-label="Großes Artikelbild"
         >

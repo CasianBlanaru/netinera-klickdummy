@@ -1,7 +1,8 @@
 <template>
   <div>
-    <CompanySection />
-    <ResponsibilitySection />
+    <CurrentSection />
+    <PortraitSection />
+    <StatisticsSection />
     
     <!-- Content Section -->
     <div class="bg-white py-16">
@@ -128,8 +129,9 @@
 </template>
 
 <script setup lang="ts">
-import CompanySection from '~/components/CompanySection.vue'
-import ResponsibilitySection from '~/components/ResponsibilitySection.vue'
+import CurrentSection from '~/components/CurrentSection.vue'
+import PortraitSection from '~/components/PortraitSection.vue'
+import StatisticsSection from '~/components/StatisticsSection.vue'
 import SustainabilityArticle from '~/components/SustainabilityArticle.vue'
 import OdegArticle from '~/components/OdegArticle.vue'
 import PressReleaseDetail from '~/components/PressReleaseDetail.vue'

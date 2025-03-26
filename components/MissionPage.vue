@@ -2,7 +2,7 @@
   <main class="flex flex-col bg-white w-full min-h-[screen]">
     <!-- Hero Section -->
     <section
-      class="relative bg-orange-400 w-full h-[720px]"
+      class="relative bg-orange-400 w-full h-[420px] md:h-[720px]"
       aria-labelledby="mission-title"
     >
       <div

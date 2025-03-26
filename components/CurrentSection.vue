@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gray-100 px-4 py-8 md:py-16">
-    <div class="mx-auto max-w-7xl container">
+    <div class="mx-auto max-w-6xl">
       <h2 class="mb-4 md:mb-6 font-bold md:text-[40px] text-2xl text-center">Aktuell</h2>
 
       <div class="gap-8 md:gap-12 grid grid-cols-1 lg:grid-cols-2">

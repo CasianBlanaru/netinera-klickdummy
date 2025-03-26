@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col items-center bg-white mx-auto mb-30 p-10 max-md:px-[15px] max-md:py-5 pt-40 max-w-[1437px]">
+  <article class="flex flex-col items-center bg-white mx-auto mb-30 p-10 max-md:px-[15px] max-md:py-5 pt-60 max-w-[1437px]">
     <!-- Header Section -->
     <div class="mb-20 max-md:mb-10 w-full max-w-[592px]">
       <p class="mb-3 font-['Inter'] text-stone-900 text-base">

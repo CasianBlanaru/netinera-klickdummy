@@ -19,7 +19,16 @@
 
   .bg-orange-400, .bg-amber-500 {
     background-color: var(--color-primary);
-    color: #fff;
+    color: #fff !important;
+}
+
+
+/* Dark mode specific styles */
+.dark {
+    font-family: 'Titillium Web', sans-serif !important;
+  }
+  .heroslider span, .heroslider div {
+    color: #fff !important;
 }
 }
 

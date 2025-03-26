@@ -1,6 +1,6 @@
 <template>
   <section class="px-4 py-8 md:py-16">
-    <div class="mx-auto max-w-7xl container">
+    <div class="mx-auto max-w-6xl">
       <h2 class="mb-4 md:mb-6 font-bold md:text-[40px] text-2xl text-center">Netinera in Zahlen</h2>
       
       <p class="mx-auto mb-8 md:mb-12 max-w-2xl text-base md:text-lg text-center">

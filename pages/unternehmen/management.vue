@@ -8,7 +8,7 @@
     />
     <div class="mx-auto px-4 py-12 container">
       <div class="max-w-none prose">
-        <p class="mb-6 text-lg">
+        <p class="mx-auto mb-18 max-w-[580px]">
           Unser Management-Team vereint langjährige Erfahrung im Mobilitätssektor mit 
           innovativem Denken. Gemeinsam gestalten wir die Zukunft des öffentlichen Verkehrs.
         </p>

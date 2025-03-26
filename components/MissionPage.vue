@@ -8,13 +8,13 @@
       <div
         class="bottom-0 left-2/4 absolute bg-white w-[896px] max-sm:w-[95%] max-md:w-[90%] h-48 -translate-x-2/4"
       >
-        <div class="px-10 max-sm:px-5 py-6">
+        <div class="mx-auto pt-15 max-w-[400px]">
           <p class="text-stone-900 text-base leading-6 tracking-normal">
             UNSERE MISSION
           </p>
           <h1
             id="mission-title"
-            class="mt-1 font-bold text-stone-900 max-sm:text-3xl max-md:text-3xl text-4xl leading-[60px] tracking-tighter"
+            class="mt-1 font-bold text-stone-900 max-sm:text-3xl max-md:text-3xl text-4xl leading-[48px] tracking-tighter"
           >
             Wir verbinden Menschen und Regionen.Tag für Tag.
           </h1>

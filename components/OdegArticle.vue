@@ -29,7 +29,7 @@
         class="flex flex-col px-10 max-sm:px-4 max-md:px-6 py-20 max-sm:py-8 max-md:py-12 w-full"
       >
         <p
-          class="mx-auto mb-16 w-full max-w-[500px] font-medium text-stone-900 text-base leading-6 tracking-normal"
+          class="mx-auto mb-16 w-full max-w-[400px] font-medium text-stone-900 text-base leading-6 tracking-normal"
         >
           Ich bin eine optionale Bildunterschrift
         </p>

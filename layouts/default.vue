@@ -62,4 +62,14 @@ const colorMode = useColorMode();
 .dark {
   font-family: 'Titillium Web', sans-serif !important;
 }
+
+/* Ensure light mode font is applied */
+:root:not(.dark) {
+  font-family: theme('fontFamily.sans');
+}
+
+/* Ensure smooth theme transition */
+body {
+  transition: background-color 0.3s ease-in-out;
+}
 </style> 

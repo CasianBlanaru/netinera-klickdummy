@@ -4,20 +4,20 @@
     <div v-for="(profile, index) in managementProfiles" :key="index" class="mb-10 md:mb-20">
       <!-- Profile Content -->
       <div class="mx-auto max-w-[580px]">
-        <h2 class="mb-4 font-bold text-[#1E1E1E] dark:text-white text-xl md:text-2xl leading-tight">
+        <h2 class="mb-4 font-bold text-[#1E1E1E]e text-xl md:text-2xl leading-tight">
           {{ profile.name }}
         </h2>
-        <div class="mb-4 font-normal text-[#1E1E1E] dark:text-gray-200 text-base md:text-lg leading-[150%] tracking-[-0.176px]">
+        <div class="mb-4 font-normal text-[#1E1E1E] text-base md:text-lg leading-[150%] tracking-[-0.176px]">
           {{ profile.description }}
         </div>
-        <div v-if="profile.personal" class="mb-4 font-normal text-[#1E1E1E] dark:text-gray-200 text-base md:text-lg leading-[150%] tracking-[-0.176px]">
+        <div v-if="profile.personal" class="mb-4 font-normal text-[#1E1E1E] text-base md:text-lg leading-[150%] tracking-[-0.176px]">
           {{ profile.personal }}
         </div>
       </div>
 
       <!-- Quote Section -->
       <div class="mt-8 md:mt-[60px] text-center">
-        <p class="mx-auto mb-6 md:mb-[30px] max-w-[1012px] text-[#1E1E1E] md:text-[30px] dark:text-white text-xl italic leading-[150%] tracking-[-0.57px]">
+        <p class="mx-auto mb-6 md:mb-[30px] max-w-[1012px] text-[#1E1E1E] md:text-[30px] text-xl italic leading-[150%] tracking-[-0.57px]">
           "{{ profile.quote }}"
         </p>
         
@@ -28,10 +28,10 @@
 
         <!-- Profile Footer -->
         <div class="space-y-1">
-          <div class="font-medium text-[#1E1E1E] dark:text-white text-base md:text-lg leading-[150%] tracking-[-0.176px]">
+          <div class="font-medium text-[#1E1E1E] text-base md:text-lg leading-[150%] tracking-[-0.176px]">
             {{ profile.name }}
           </div>
-          <div class="text-[#1E1E1E] dark:text-gray-300 text-sm md:text-base leading-[150%] tracking-[-0.176px]">
+          <div class="text-[#1E1E1E] text-sm md:text-base leading-[150%] tracking-[-0.176px]">
             {{ profile.position }}
           </div>
         </div>

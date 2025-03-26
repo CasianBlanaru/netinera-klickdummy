@@ -2,7 +2,7 @@
   <button
     type="button"
     :class="[
-      'w-10 h-10 flex items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 cursor-pointer transition-colors',
+      'w-10 h-10 flex items-center justify-center rounded-full focus:outline-none focus:ring-2 hover:bg-gray-100 dark:hover:bg-gray-100 focus:ring-red-600 focus:ring-offset-2 cursor-pointer transition-colors',
       isOpen ? 'bg-gray-100' : ''
     ]"
     @click="$emit('click')"

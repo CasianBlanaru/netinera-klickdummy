@@ -1,35 +1,25 @@
-@import "tailwindcss";
-@import "./tailwind-custom.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Import Titillium Web font */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "./tailwind-custom.css";
 
-/* Default font for light mode */
+
 :root {
   --color-primary: #1E1E1E;
   --color-orange: #FF5722;
   --color-secondary: #F5F5F5;
   --color-gray: #E6E6E6;
-  font-family: theme('fontFamily.sans');
-}
-
-/* Titillium Web font for dark mode */
-:root.dark {
-  font-family: 'Titillium Web', sans-serif !important;
-}
-
-/* Ensure all text elements use the correct font in dark mode */
-.dark * {
-  font-family: 'Titillium Web', sans-serif !important;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   color: var(--color-primary);
+}
+
+/* Dark mode specific styles */
+.dark {
+  font-family: 'Titillium Web', sans-serif !important;
 }
 
 * {

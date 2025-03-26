@@ -4,7 +4,7 @@
     :aria-labelledby="titleId"
   >
     <div
-      class="max-md:mb-8 max-md:p-0 pt-80 pr-0 pb-0 max-w-[560px] max-md:max-w-full"
+      class="max-md:mb-8 max-md:p-0 pt-80 pr-0 pb-0 max-w-[460px] max-md:max-w-full"
     >
       <p class="font-medium text-stone-900 text-base leading-6 tracking-normal">
         {{ subtitle }}

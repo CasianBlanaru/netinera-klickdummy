@@ -9,7 +9,7 @@
       </p>
 
       <!-- Buttons Container -->
-      <div class="flex sm:flex-row flex-col justify-center gap-3 md:gap-4">
+      <div class="flex sm:flex-row justify-center gap-3 md:gap-4">
         <a
           href="#"
           class="inline-flex justify-center items-center gap-2 bg-[#E6F3FF] hover:bg-[#d9edff] px-4 md:px-6 py-2 md:py-3 rounded transition-colors"

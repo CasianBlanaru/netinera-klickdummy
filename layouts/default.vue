@@ -2,7 +2,7 @@
   <div>
     <ClientOnly>
       <div :class="[$colorMode.value]">
-        <div class="bg-theme-neutral min-h-screen text-theme-primary-dark">
+        <div class="flex flex-col bg-theme-neutral w-full min-h-screen text-theme-primary-dark">
           <!-- Skip to main content link für Barrierefreiheit -->
           <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
           

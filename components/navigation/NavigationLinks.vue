@@ -40,7 +40,7 @@
               v-for="(child, childIndex) in item.children"
               :key="childIndex"
               :to="child.href"
-              class="block hover:bg-gray-50 px-4 py-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-gray-700 hover:text-red-600 transition-colors"
+              class="block hover:bg-gray-50 px-4 py-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-0 text-gray-700 hover:text-red-600 transition-colors"
             >
               {{ child.text }}
             </router-link>

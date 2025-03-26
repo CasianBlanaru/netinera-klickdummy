@@ -33,7 +33,7 @@
             v-show="isMobile ? activeSubmenu === index : true"
             :class="[
               'bg-white',
-              isMobile ? 'mt-2 ml-4' : 'absolute top-full left-0 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-lg rounded-lg overflow-visible'
+              isMobile ? 'mt-2 ml-4' : 'mt-[30px] absolute top-full left-0 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-lg rounded-lg overflow-visible'
             ]"
           >
             <router-link

@@ -8,7 +8,7 @@
       subtext=""
       />
     <!-- Main Content -->
-    <div class="mx-auto px-[24px] sm:px-[16px] md:px-[20px] pt-20 max-w-[1200px]">
+    <div class="mx-auto px-[24px] sm:px-[16px] md:px-[20px] pt-20 max-w-[840px]">
       <!-- Kontaktformular und Infos -->
       <div class="flex flex-wrap gap-[64px] sm:gap-[32px] md:gap-[32px]">
         <div class="flex-1 min-w-[300px]">

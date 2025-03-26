@@ -8,7 +8,7 @@
       <div
         class="bottom-0 left-2/4 absolute bg-white w-[896px] max-sm:w-[95%] max-md:w-[90%] h-48 -translate-x-2/4"
       >
-        <div class="mx-auto pt-15 max-w-[400px]">
+        <div class="mx-auto p-8 pt-15 max-w-[400px]">
           <p class="text-stone-900 text-base leading-6 tracking-normal">
             UNSERE MISSION
           </p>
